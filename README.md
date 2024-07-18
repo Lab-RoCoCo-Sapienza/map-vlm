@@ -22,6 +22,4 @@
 
 </div>
 
-<img src="/assets/architecture.png" width=100%>
-
 </div>
