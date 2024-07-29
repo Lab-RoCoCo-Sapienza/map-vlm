@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Multi-agent Planning using Visual Language Models">
+  <meta name="keywords"
+    content="Multi-agent Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-agent Planning using Visual Language Models</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Related Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="iros.io">
+              IROS
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Multi-agent Planning using Visual Language Models</h1>
+            <h2 class="title is-6 publlication-title">ECAI 2024</h2>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/michele-brienza-ba0292253/"><i>Michele Brienza</i></a> <sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/fra-arg/"><i>Francesco Argenziano</i></a> <sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/vincenzo-suriani-549429127/"><i>Vincenzo Suriani </i></a> <sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://web.unibas.it/bloisi/"><i>Domenico Daniele Bloisi</i></a> <sup>3</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href=""><i>Daniele Nardi</i></a><sup>1</sup>,
+              </span>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup>Sapienza University of Rome</span>
+              <span class="author-block"><sup>2</sup>University of Basilicata</span>
+              <span class="author-block"><sup>3</sup>International University of Rome</span>
+              <br>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="assets/pdf/2023-ConceptGraphs.pdf" class="external-link button is-normal ">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="paper_arxiv.pdf" class="external-link button is-normal ">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/repo" class="external-link button is-normal ">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container is-max-desktop">
+      <img src="assets/images/architecture.png" alt="Architecture" style="width:150%;">
+      <h5 class="has-text-justified">Complete and detailed architecture of the proposed method. The task description and the image are given in input to the agents that extract meaningful information from the scene. Their output is then processed by the planner agent that obtain the final plan. Such plan is then compared with the ground truth  and evaluated according our new metric that takes into account semantically meaningful information.</h5>
+    </div>
+
+  <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="column has-text-justified">
+        <p>Large Language Models (LLMs) and Visual Language Models (VLMs) are gaining growing interest due to their increasing performance and application to various domains and tasks.
+          However, LLMs and VLMs can produce erroneous results, especially when a deep understanding of the domain of the problem is needed. For example, when planning and perception are required simultaneously, these models tend to fail because of their difficulty in merging multi-modal information.
+          To tackle this problem, fine-tuned models are usually used and trained on ad-hoc data structures representing the environment. This solution has limited effectiveness since it can make the context too complex for processing.
+          In this paper, we propose a multi-agent architecture for embodied task planning that operates without requiring specific data structures as input. 
+          Instead, it utilizes a single image of the environment, coping with free-form domains leveraging commonsense knowledge.
+          We also propose a novel, fully automatic evaluation procedure, PG2S, designed to better describe the quality of a plan.
+          The widely recognized ALFRED dataset has been used to validate our approach. In particular, we compared PG2S with respect to the existing KAS metric to further assess the quality of the obtained plans.
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Approach</h2>
+      <div class="column has-text-justified">
+        <p>Our work is based on the idea of using a multi-agent architecture to solve the task of embodied task planning.
+          The agents are designed to work in a cooperative way, each one with a specific role. The agents are:
+          <ul>
+            <li>Semantic Knowledge Miner Agent: it is responsible for extracting meaningful relations among objects from the image of the environment.</li>
+            <li>Grounded Knowledge Miner Agent: it is responsible for understanding the task description describing the image of the enviroment.</li>
+            <li>Planner Agent: it is responsible for generating the plan using the information provided by the previous agents.</li>
+          </ul>
+          Starting from an image of the environment and the task description, the agents work together to generate the plan.
+          To evaluate the quality of the plan, we propose a new metric, PG2S, that takes into account semantically meaningful information.
+          Using the goal-wise similarity and the sentence-wise similarity, PG2S is able to compare two plans between ground truth and predicted one.
+          The goal-wise similarity is computed by comparing the main actions of the both plans matching the actions of each sentence. The actions are obtained 
+          by extracting the main verbs and nouns from the sentences using POS tagging.
+          The sentence-wise similarity is computed by comparing the sentences of the both plans using sentence transformers.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Experiments</h2>
+      <div class="column has-text-justified">
+        <p>The plans are evaluated using the ALFRED dataset. Here we show examples of the plans generated by our method. The enviroments are scene images 
+        of an home regarding hometasks. The task descriptions are given in natural language. The plans are generated by our method and compared with the ground truth.
+        </p>
+        <ul style = "margin-top: 2%;">
+          <li><a href="experiments/trial_T20190907_161326_928347.html">trial_T20190907_161326_928347</li></a>
+          <li><a href="">trial_T20190907_161326_928347</li></a>
+          <li><a href="">trial_T20190907_161326_928347</li></a>
+        </ul>
+      </div>
+  </div>
+  </div>
+  
+
+
+
+  </section>
+  
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{}</code></pre>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website adapted from the <a rel="license"
+              href="https://github.com/concept-graphs/concept-graphs.github.io">Concept-Graph</a> template, which is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+              International License</a>. The template uses the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
+              source code</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
