@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Multi-agent Planning using Visual Language Models">
+  <meta name="keywords"
+    content="Multi-agent Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-agent Planning using Visual Language Models</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-2 publication-title">Multi-agent Planning using Visual Language Models</h1>
+                <h2 class="title is-6 publlication-title">ECAI 2024</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+          <h2 class="title is-8">To cool a tomato and place it in the trash can (trial_T20190909_082934_483899 -2)
+          </h2>
+      </div>  
+  </div>
+
+    <div class="container_table">
+    <table>
+        <tr>
+            <th >Ground truth</th>
+            <th >Single Agent with table</th>
+            <th >Multi Agent with table</th>
+            <th >Single Agent with image</th>
+            <th >Multi Agent with image</th>
+        </tr>
+        <tr>
+            <th>STEP 1: Move across the room to the wood TV stand 
+                 <br> STEP 2: Pick up the vase that is on the shelf in the middle of the TV stand
+                 <br> STEP 3: Carry the vase to the floor lamp to the left of the chair 
+                 <br> STEP 4: Turn on the lamp</th>
+            <th >
+            Turn around and walk to the dining table.,
+            <br>Take the tea pot from the dining table.,
+            <br> Turn around and walk to the floor lamp.,
+            <br> Place the tea pot next to the floor lamp.,
+            <br>Turn the floor lamp on.</th>
+            <th >Turn around and walk to the kitchen counter.,
+              <br>Take the teapot from the kitchen counter.,
+              <br>Turn around and walk to the floor lamp.,
+              <br>Place the teapot near the floor lamp.,
+              <br>Turn around and walk to the light switch.,
+              <br>Flip the light switch to turn on the floor lamp.</th>
+            <th >1. Walk to the tea pot on the dining table in the center of the room.
+              <br>2. Pick up the tea pot from the dining table.
+              <br>3. Turn towards the lamp hanging above the dining table.
+              <br>4. Place the tea pot near the base of the lamp on the dining table.
+              <br>5. Walk to the light switch on the wall to the right of the white door.
+              <br>6. Turn on the lamp using the light switch.</th>
+            <th >1. Stand up from your current position.
+              <br>2. Walk to the ottoman at the position directly in front of you.
+              <br>3. Walk beyond the ottoman to reach the dining area.
+              <br>4. Walk to the dining table in the room beyond the couch.
+              <br>5. Pick up the teapot from the dining table.
+              <br>6. Inspect the lamp above the dining table to locate the switch.
+              <br>7. If the switch is on the lamp, reach up to the lamp above the dining table and turn it on.
+              <br> 8. If the switch is on the wall, walk to the nearest wall switch in the dining area and turn on the lamp.
+              <br> 9. Place the teapot near the base of the lamp on the dining table.</th>
+
+        </tr>
+    </table>
+    </div>   
+    
+    <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <img src="../assets/images/8.jpg" alt="Architecture" style="width:50%;">
+
+  </div>
+  </div>
+
+
+
+
+</body>
+</html>
