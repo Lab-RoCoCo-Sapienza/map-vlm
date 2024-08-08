@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Multi-agent Planning using Visual Language Models">
+  <meta name="keywords"
+    content="Multi-agent Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-agent Planning using Visual Language Models</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-2 publication-title">Multi-agent Planning using Visual Language Models</h1>
+                <h2 class="title is-6 publlication-title">ECAI 2024</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+          <h2 class="title is-8">To cool a tomato and place it in the trash can (trial_T20190909_082934_483899)
+          </h2>
+      </div>  
+  </div>
+
+    <div class="container_table">
+    <table>
+        <tr>
+            <th >Ground truth</th>
+            <th >Single Agent with table</th>
+            <th >Multi Agent with table</th>
+            <th >Single Agent with image</th>
+            <th >Multi Agent with image</th>
+        </tr>
+        <tr>
+            <th>STEP 1: Turn right and walk across the room to face the trash can.
+<br>STEP 2: Pick up the tomato in the trash can.
+<br>STEP 3: Turn around and walk across the room to face the fridge.
+<br>STEP 4: Cool the tomato in the fridge and remove it.
+<br>STEP 5: Turn around and walk across the room to face the trash can.
+<br>STEP 6: Place the tomato in the trash can.</th>
+     
+<th >Turn around and walk to the countertop.,
+              <br>Take the tomato at position (-0.341, 0.953, 0.423).,
+              <br>Turn around and walk to the fridge.,
+              <br>Cool the tomato in the fridge.,
+              <br>Turn around and walk to the garbage can.,
+              <br>Place the tomato in the garbage can at position (1.646, -0.000, 0.679).</th>
+<th >Turn around and walk to the fridge.,
+              <br>Take the tomato out of the fridge.,
+              <br>Turn around and walk to the garbage can.,
+              <br>Place the tomato in the garbage can.</th>
+<th >1. Walk to the tomato on the kitchen island.
+              <br>2. Pick up the tomato.
+              <br>3. Turn to face the refrigerator.
+              <br>4. Walk to the refrigerator.
+              <br>5. Open the refrigerator door.
+              <br>6. Place the tomato inside the refrigerator to cool.
+              <br>7. Close the refrigerator door.
+              <br>8. Wait for the tomato to cool.
+              <br>9. Open the refrigerator door.
+              <br>10. Take the cooled tomato out of the refrigerator.
+              <br>11. Close the refrigerator door.
+              <br>12. Turn to face the trash can under the kitchen sink.
+              <br>13. Walk to the trash can.
+              <br>14. Open the trash can lid.
+              <br>15. Place the tomato in the trash can.
+              <br>16. Close the trash can lid.</th>
+<th >1. Walk to the kitchen island, located in the center of the kitchen.
+              <br>2. Pick up the tomato, which is on the kitchen island.
+              <br>3. Walk to the refrigerator, located in the kitchen, next to the oven.
+              <br>4. Open the refrigerator door.
+              <br>5. Place the tomato inside the refrigerator.
+              <br>6. Close the refrigerator door.
+              <br>7. Wait for the tomato to cool to the desired temperature.
+              <br>8. Open the refrigerator door.
+              <br>9. Retrieve the tomato from the refrigerator.
+              <br>10. Close the refrigerator door.
+              <br>11. Walk to the trash can, located under the sink in the kitchen.
+              <br>12. Open the trash can lid.
+              <br>13. Place the cooled tomato in the trash can.
+              <br>14. Close the trash can lid.</th>
+        </tr>
+    </table>
+    </div>   
+    
+    <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <img src="../assets/images/8.jpg" alt="Architecture" style="width:50%;">
+
+  </div>
+  </div>
+
+
+
+
+</body>
+</html>

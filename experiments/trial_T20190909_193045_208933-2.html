@@ -43,7 +43,7 @@
     </section>
     <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-          <h2 class="title is-8">To pick up the statue and turn on the lamp next to the couch. (trial_T20190909_193045_208933)
+          <h2 class="title is-8">Pick up the statue from the table and turn on the lamp.(trial_T20190909_193045_208933)
           </h2>
       </div>  
   </div>
@@ -58,38 +58,48 @@
             <th >Multi Agent with image</th>
         </tr>
         <tr>
-            <th>STEP 1: Walk down the hallway into the living room and turn right, walk past the couch and turn left towards the brown coffee table.
-<br>STEP 2: Pick up the brown statue behind the plant in the gold pot.
-<br>STEP 3: Turn around and head to the small brown coffee table next to the couch with the lamp.
-<br>STEP 4: Turn the lamp on that's on the small table next to the couch.</th>
+            <th>STEP 1: Walk towards the table then turn right and walk forwards. 
+<br>STEP 2: Turn left and pick up the statue that is on the wooden side-table. 
+<br>STEP 3: Turn around and walk towards the wooden side-table next to the couch. 
+<br>STEP 4: Turn on the lamp on top of the table.</th>
          
-<th >Turn around and walk to the SideTable at position (-0.589, 0.000, 1.227).,
-  Pick up the Statue from the SideTable.,
-  Turn around and walk to the Sofa at position (0.057, -0.002, -1.386).,
-  Turn on the DeskLamp next to the Sofa at position (1.657, 0.654, -1.605).</th>
-<th >Walk to the SideTable at position (-1.276, 1.000, 1.327).,
-  Pick up the statue from the SideTable.,
-  Walk to the DeskLamp at position (1.657, 0.654, -1.605).,
-  Turn on the DeskLamp next to the couch.</th>
-<th >1. Walk to the statue on the cabinet to the right of the window.
-  2. Pick up the statue from the cabinet.
-  3. Turn to face the lamp on the tripod stand to the left of the couch.
-  4. Walk to the lamp on the tripod stand.
-  5. Turn on the lamp next to the couch.</th>
-<th >1. Walk to the cabinet that is next to the wall on the right side of the room.
-  2. Reach for the statue that is on the cabinet.
-  3. Pick up the statue from the cabinet.
-  4. Walk to the table that is next to the couch on the left side of the room.
-  5. Locate the lamp that is on the table.
-  6. Reach for the switch on the lamp.
-  7. Turn on the lamp next to the couch.</th>
+<th >Walk to the SideTable at position (-0.589, 0.000, 1.227).,
+              <br>Pick up the Statue from the SideTable.,
+              <br>Turn around and walk to the DeskLamp at position (1.657, 0.654, -1.605).,
+              <br>Turn on the DeskLamp.</th>
+<th >Walk to the SideTable at ID 33.,
+              <br>Check if there is a statue on the SideTable.,
+              <br>If no statue, walk to the SideTable at ID 37.,
+              <br>Check if there is a statue on the SideTable.,
+              <br>If no statue, walk to the SideTable at ID 44.,
+              <br>Check if there is a statue on the SideTable.,
+              <br>If no statue, walk to the DiningTable at ID 32.,
+              <br>Check if there is a statue on the DiningTable.,
+              <br>Pick up the statue from the table where it is found.,
+              <br>Turn around and walk to the DeskLamp at ID 23.,
+              <br>Check if the DeskLamp is operational.,
+              <br>If DeskLamp is not operational, walk to the FloorLamp at ID 24.,
+              <br>Check if the FloorLamp is operational.,
+              <br>If neither lamp is operational, walk to the LightSwitch at ID 25.,
+              <br>Turn on the LightSwitch.,
+              <br>Return to the operational lamp and turn it on.</th>
+<th >1. Walk to the table in the center of the room.
+              <br>2. Pick up the statue from the table.
+              <br>3. Turn to face the lamp on the tripod stand near the couch.
+              <br>4. Walk to the lamp.
+              <br>5. Turn on the lamp.</th>
+<th >1. Walk to the wooden cabinet on the right side of the room.
+              <br>2. Pick up the statue from the top of the cabinet.
+              <br>3. Walk to the floor lamp located on the left side of the room, next to the brown sofa.
+              <br>4. Locate the switch or knob on the lamp to turn it on.
+              <br>5. Turn on the lamp by flipping the switch or twisting the knob.</th>
         </tr>
     </table>
     </div>   
     
     <div style = "margin-top: 3%" class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-      <img src="../assets/images/8.jpg" alt="Architecture" style="width:50%;">
+      <img src="../assets/images/5.jpg" alt="Architecture" style="width:50%;">
 
   </div>
   </div>
