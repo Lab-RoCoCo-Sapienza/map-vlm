@@ -15,8 +15,8 @@
 
 <div>
 
-[![arxiv paper](https://img.shields.io/badge/Project-Website-blue)]([https://lab-rococo-sapienza.github.io/map-vlm/](https://lab-rococo-sapienza.github.io/map-vlm/))
-[![arxiv paper](https://img.shields.io/badge/arXiv-TBA-red)](https://sites.google.com/diag.uniroma1.it/empower/home)
+[![arxiv paper](https://img.shields.io/badge/Project-Website-blue)](https://lab-rococo-sapienza.github.io/map-vlm/)
+[![arxiv paper](https://img.shields.io/badge/arXiv-PDF-red)](https://arxiv.org/abs/2408.05478)
 [![license](https://img.shields.io/badge/License-Apache_2.0-yellow)](LICENSE)
 
 </div>
