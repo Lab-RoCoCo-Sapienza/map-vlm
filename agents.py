@@ -2,7 +2,6 @@ from openai import OpenAI
 from table import Table
 client = OpenAI()
 
-
 class Agents:
     def __init__(self,image,task_description):
         self.encoded_image = image
@@ -92,7 +91,7 @@ class Agents:
 
     def single_agent_vision_planning(self):
         agent = client.chat.completions.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4o",
             messages=[
                 {
                 "role": "user",
@@ -130,7 +129,7 @@ class Agents:
         def enviroment_agent():
             print("__________-")
             agent = client.chat.completions.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4o",
             messages=[
                 {
                 "role": "user",
@@ -175,7 +174,7 @@ class Agents:
         def sim_ground_agent():
             print("__________-")
             agent = client.chat.completions.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4o",
             messages=[
                 {
                 "role": "user",
